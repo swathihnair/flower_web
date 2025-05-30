@@ -89,3 +89,80 @@ header {
 m{
   border-radius: 15px;
 }
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+@media (max-width: 768px) {
+  .nav-menu {
+    flex-direction: column;
+  }
+
+  .hero-text {
+    font-size: 1.5rem;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 1024px) {
+  .searchbox {
+    width: 100%;
+  }
+
+  .nav a {
+    font-size: 28px;
+  }
+
+  .title h1 {
+    font-size: 50px;
+  }
+
+  .title h2 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .title h1 {
+    font-size: 40px;
+  }
+
+  .title h2 {
+    font-size: 20px;
+  }
+
+  .navbar {
+    height: auto;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .searchbox {
+    width: 90%;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .nav a {
+    font-size: 24px;
+  }
+}
